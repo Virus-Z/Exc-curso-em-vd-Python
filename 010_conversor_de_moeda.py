@@ -1,0 +1,5 @@
+r = float(input('Quanto de dinheiro você tem na carteira? R$'))
+d = (r/4.87)
+e = (r/5.20)
+y = (r/0.033)
+print('''Com R${:.2f}, você pode comprar:\nDolar: Us${:.2f}\nEuro: €{:.2f}n\nYene: ¥{:.2f}'''.format(r,d,e,y))

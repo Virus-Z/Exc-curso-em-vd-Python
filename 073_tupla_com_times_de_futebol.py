@@ -1,0 +1,13 @@
+t = ('Botafogo', 'Palmeiras', 'Bragantino', 'Grêmio', 'Atlético-MG', 'Flamengo', 'Athletico-PR', 'Fluminense', 'Fortaleza', 'São Paulo',
+     'Internacional', 'Cuiabá', 'Corinthians', 'Bahia', 'Santos','Cruzeiro', 'Goiás', 'Vasco', 'Coritiba', 'América-MG')
+print('\033[1;33m-='*25)
+print(f'\033[mLista de times do brasileirão: {t}')
+print('\033[1;33m-='*25)
+print(f'\033[mOs 5 primeiros colocados são: {t[:5]}')
+print('\033[1;33m-='*25)
+print(f'\033[mOs 4 ultimos são: {t[-4:]}')
+print('\033[1;33m-='*25)
+print(f'\033[mTimes em orden alfabetica: {sorted(t)}')
+print('\033[1;33m-='*25)
+print('\033[mO time do Vasco aparece na posição: {}°'.format(t.index('Corinthians')+1))
+print('\033[1;33m-='*25)
