@@ -3,11 +3,10 @@ from datetime import date
 def voto(ano):
     idade = date.today().year - int(ano)
     if idade < 16:
-        return 'NEGADO'
+        return print(f'Com {date.today().year - int(ano)} anos o voto é: \033[1;34mNEGADO\033[m')
     elif 16 <= idade < 18 or idade > 70:
-        return 'OPCIONAL'
+        return print(f'Com {date.today().year - int(ano)} anos o voto é: \033[1;34mOPCIONAL\033[m')
     else:
-        return 'OBRIGATORIO'
+        return print(f'Com {date.today().year - int(ano)} anos o voto é: \033[1;34mOBRIGATÓRIO\033[m')
 
-ano = input('Referente a poder votar vamos ver qual seu status!\nEm que ano você nasceu? ')
-print(f'Com {date.today().year - int(ano)} anos: {voto(ano)}')
+voto(input('Referente a poder votar vamos ver qual seu status!\nEm que ano você nasceu? '))
